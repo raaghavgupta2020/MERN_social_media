@@ -2,9 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = { //all the states possible in our code with their initial values
     mode : "light",
-    user : null,
+    user : null, //for users 
     token : null, //for authentication and stuff
-    posts :[],
+    posts :[], // for posts 
+    // ->hence all the 3 stuffs are included , we just created variables for it 
 }
 
 export const authSlice = createSlice({
