@@ -59,7 +59,7 @@ app.post("/posts" , verifyToken, upload.single("picture") , createPost) //only i
 //type 2 routes
 /* routes without files */
 app.use("/auth" , authRoutes); //all the routes in this file will be seen as      /auth/<route>
-app.use("/user" , userRoutes); 
+app.use("/users" , userRoutes); 
 app.use("/post" , postRoutes); 
 
 
