@@ -60,7 +60,7 @@ app.post("/posts" , verifyToken, upload.single("picture") , createPost) //only i
 /* routes without files */
 app.use("/auth" , authRoutes); //all the routes in this file will be seen as      /auth/<route>
 app.use("/users" , userRoutes); 
-app.use("/post" , postRoutes); 
+app.use("/posts" , postRoutes); 
 
 
 
